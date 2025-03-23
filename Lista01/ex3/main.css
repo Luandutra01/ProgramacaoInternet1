@@ -1,0 +1,46 @@
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.links a {
+    
+    display: block;
+    font-family: Arial, sans-serif;
+    text-decoration: underline;
+    color: blue;
+    font-size: 20px;
+}
+.navegacao {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navegacao a {
+    font-family: Arial, sans-serif;
+    text-decoration: underline;
+    color: blue;
+    font-size: 20px;
+    margin: 0 30px; /* Espaçamento mínimo de 30 caracteres entre os links */
+}
+
+.descricao {
+    text-align: center;
+}
