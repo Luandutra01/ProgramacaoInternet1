@@ -1,0 +1,111 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: 600;
+
+}
+
+.item01{
+    background-color: rgb(103, 159, 185);
+}
+.item02{
+    background-color: red;
+}
+.item03{
+    background-color: violet;
+}
+.item04{
+    background-color: rgb(187, 56, 187);
+}
+.item05{
+    background-color: yellow;
+}
+.item06{
+    background-color: green;
+}
+.item07{
+    background-color: lightsalmon;
+}
+.item08{
+    background-color: lightseagreen;
+}
+.item09{
+    background-color: pink;
+}
+.item10{
+    background-color: gray;
+}
+.item11{
+    background-color: cyan;
+}
+.item12{
+    background-color: lightblue;
+}
+
+/* Para telas maiores que 1280px */
+@media (min-width: 1280px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-rows: 1fr repeat(3, 2fr) 1fr;
+        gap: 2px;
+    }
+    .item01{
+        grid-column:  1 / 5;
+    }
+    .item02{
+        grid-row:  2 / 5;
+    }
+    .item12{
+        grid-column:  1 / 5;
+    }
+}
+
+/* Para telas entre 769px e 1280px (opcional, caso precise de algo entre esses tamanhos) */
+@media (min-width: 769px) and (max-width: 1280px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 2px;
+    }
+}
+
+/* Para telas menores ou iguais a 768px */
+@media (min-width: 480px) and (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 2px;
+    }
+}
+
+/* Para telas menores ou iguais a 768px */
+@media (max-width: 480px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 2px;
+    }
+}
+
+/* Para telas menores ou iguais a 768px */
+@media (max-width: 480px) and (orientation: landscape){
+    .container {
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 2px;
+    }
+}
+
+
